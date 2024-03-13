@@ -1,9 +1,10 @@
 header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  height: 620px;
+  height: 400px;
+  margin-top: 120px;
   width: 100%;
   background-color: #e6be50;
   background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
