@@ -9,7 +9,7 @@ nav {
   padding: 0 1.5em;
 }
 
-span.tweet {
+span.nav-tweet-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
