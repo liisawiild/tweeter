@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 620px;
+  width: 100%;
+  background-color: #e6be50;
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+}
