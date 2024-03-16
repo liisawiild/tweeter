@@ -9,6 +9,11 @@ $(document).ready(function() {
     let remainingChar = 140 - inputChar
     $('.counter').text(remainingChar);                            //will replace inner text with text provided in func
 
+    
+    if(inputChar > 140) {
+      $('.counter').addClass('negative');
+    }
+
   });
 
 });
