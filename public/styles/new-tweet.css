@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.btn-and-count {
+.submit-and-count {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,3 +32,6 @@ button {
   background-color: #4056A1;
 }
 
+.negative {
+  color: red;
+}
