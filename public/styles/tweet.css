@@ -10,7 +10,7 @@ section.posted-tweets:hover {
   box-shadow: 10px 5px 5px #b8b8b8;
 }
 
-article header {
+header.tweet {
   background-image: none;
   background-color: #f4f1ec;
   display: flex;
@@ -20,12 +20,12 @@ article header {
   margin-top: 0;
 }
 
-article header div {
+header.tweet span {
   display: flex;
   align-items: center;
 }
 
-article footer {
+footer.tweet {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,22 +36,22 @@ article footer {
   padding: 0 20px;
 }
 
-article footer div i {
+footer div i {
   display: flex;
   justify-content: space-around;
   margin: 0 5px;
   color: #4056A1;
 }
 
-article footer div i:hover {
+footer div i:hover {
   color: #e6be50;
 }
 
-article img {
+img.avatar {
   height: 75px;
 }
 
-p.tweet-content {
+section.tweet-content {
   padding: 0 20px;
 }
 
