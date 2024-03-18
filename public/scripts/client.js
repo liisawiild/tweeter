@@ -46,8 +46,8 @@ $(document).ready(function(){
   const $tweet = createTweetElement(tweetData);
   
   // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $('article').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  console.log("this is the tweet HTML-----------", $tweet); // to see what it looks like
+  $('.posted-tweets').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 
 })
