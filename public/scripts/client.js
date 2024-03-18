@@ -35,7 +35,7 @@ const data = [
   const renderTweets = function(tweets) {
     for (let tweetData of tweets) {
       let $tweet = createTweetElement(tweetData);
-      $('.posted-tweets').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+      $('.posted-tweets').prepend($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
     }
   }
 
