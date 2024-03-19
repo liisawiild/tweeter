@@ -14,15 +14,25 @@ $(document).ready(function () {
 const submitTweet = function (event) {
   event.preventDefault();
   let formData = $(this).serialize();
-  $.post("/tweets", formData)
-    .then(() => {
-      $('.posted-tweets').empty();
-      loadTweets();
-    })
-    .catch(err => {
-      console.log(err.message)
-    })
-}
+  let $text = $('#tweet-text').val();
+  
+  if ($text === "") {
+    alert("No tweet content was submitted. Please try again");
+  } else if ($text === null) {
+    alert("Invalid tweet submission. Please try again");
+  } else if($text.length > 140) {
+    alert("You have too much to say. Say less.");
+  } else {
+    $.post("/tweets", formData)
+      .then(() => {
+        $('.posted-tweets').empty();
+        loadTweets();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    };
+};
 
 const loadTweets = function () {
   $.get("/tweets")
