@@ -15,11 +15,9 @@ const submitTweet = function (event) {
   event.preventDefault();
   let formData = $(this).serialize();
   let $text = $('#tweet-text').val();
-  
+
   if ($text === "") {
     alert("No tweet content was submitted. Please try again");
-  } else if ($text === null) {
-    alert("Invalid tweet submission. Please try again");
   } else if($text.length > 140) {
     alert("You have too much to say. Say less.");
   } else {
@@ -27,6 +25,7 @@ const submitTweet = function (event) {
       .then(() => {
         $('.posted-tweets').empty();
         loadTweets();
+        $('#tweet-text').val("");
       })
       .catch((err) => {
         console.log(err);
