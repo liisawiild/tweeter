@@ -54,7 +54,7 @@ const createTweetElement = function (tweetData) {
               <p>${tweetData.content.text}</p>
             </section>
             <footer class="tweet">
-              <p>${tweetData.created_at}</p>
+              <p>${timeago.format(tweetData.created_at)}</p>
               <div>
                 <i class="fa-solid fa-flag"></i>
                 <i class="fa-solid fa-repeat"></i>
