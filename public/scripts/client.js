@@ -50,6 +50,12 @@ const renderTweets = function (tweets) {
   }
 }
 
+const escape = function(str) {
+  let section = document.createElement("section");
+  section.appendChild(document.createTextNode(str));
+  return section.innerHTML;
+}
+
 const createTweetElement = function (tweetData) {
   const $tweet = $(`<article>
             <header class="tweet">
@@ -60,7 +66,7 @@ const createTweetElement = function (tweetData) {
               <h4>${tweetData.user.handle}</h4>
             </header>
             <section class="tweet-content">
-              <p>${tweetData.content.text}</p>
+              <p>${escape(tweetData.content.text)}</p>
             </section>
             <footer class="tweet">
               <p>${timeago.format(tweetData.created_at)}</p>
