@@ -17,15 +17,19 @@ const submitTweet = function (event) {
   let $text = $('#tweet-text').val();
 
   if ($text === "") {
-    alert("No tweet content was submitted. Please try again");
+    $('.empty-tweet-err').slideDown("slow");
+    $('.long-tweet-err').hide();
   } else if($text.length > 140) {
-    alert("You have too much to say. Say less.");
+    $('.long-tweet-err').slideDown();
+    $('.empty-tweet-err').hide();
   } else {
     $.post("/tweets", formData)
       .then(() => {
         $('.posted-tweets').empty();
         loadTweets();
         $('#tweet-text').val("");
+        $('.empty-tweet-err').slideUp("slow");
+        $('.long-tweet-err').slideUp("slow");
       })
       .catch((err) => {
         console.log(err);
