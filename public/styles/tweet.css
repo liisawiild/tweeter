@@ -17,10 +17,10 @@ header.tweet {
   flex-direction: row;
   justify-content: space-between;
   height: 115px;
-  margin-top: 0;
+  margin: 0;
 }
 
-header.tweet span {
+header span {
   display: flex;
   align-items: center;
 }
@@ -61,7 +61,17 @@ h4 {
 
 h3 {
   font-weight: 400; 
+  margin-left: 10px;
 }
 
+/* desktop view */
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
 
+  }
+
+    
+}
 
