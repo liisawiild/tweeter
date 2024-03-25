@@ -9,7 +9,8 @@ nav {
   font-size: xx-large;
   color: #FFFFFF;
   height: 120px;
-  background-color: #4056A1;
+  background-color: #E09F3E;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
   padding: 0 1.5em;
 }
 
@@ -22,5 +23,14 @@ span.nav-tweet-btn {
 }
 
 nav i {
-  color: red;
+  color: #FF0000;
+}
+
+/* desktop view */
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: #335C67;
+    background-image: none;
+  }
+  
 }

@@ -12,7 +12,7 @@ article:hover {
 
 header.tweet {
   background-image: none;
-  background-color: #f4f1ec;
+  background-color: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,11 +40,11 @@ footer div i {
   display: flex;
   justify-content: space-around;
   margin: 0 5px;
-  color: #4056A1;
+  color: #335C67;
 }
 
 footer div i:hover {
-  color: #e6be50;
+  color: #E09F3E;
 }
 
 img.avatar {
@@ -69,7 +69,6 @@ h3 {
   body {
     display: flex;
     flex-direction: row;
-
   }
 
     

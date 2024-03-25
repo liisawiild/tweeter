@@ -1,7 +1,7 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 50px auto 0;
 }
 
 .submit-and-count {
@@ -28,7 +28,7 @@ textarea {
 
 button {
   color: #FFFFFF;
-  background-color: #4056A1;
+  background-color: #335C67;
 }
 
 .negative {
@@ -48,7 +48,7 @@ button {
 /* desktop view */
 @media only screen and (min-width: 768px) {
   .container {
-    margin: 225px 50px 50px;
+    margin: 200px 50px 50px;
 
   }
   
