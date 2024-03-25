@@ -12,6 +12,7 @@ header {
 
 div h2 {
   margin: 0;
+  color: #ffffff;
 
 }
 
@@ -19,6 +20,7 @@ div h2 {
 @media only screen and (min-width: 768px) {
   header {
     margin: 225px 50px 50px;
+    flex-shrink: 2;
   }
   
 }
