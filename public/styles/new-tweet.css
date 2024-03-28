@@ -1,3 +1,9 @@
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: inherit;
+ }
+
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -21,14 +27,12 @@ textarea {
   width: 100%;
   background-color: inherit;
   border: none;
-  border-bottom-width: 5px;
-  border-bottom-color: #545149;
-  border-bottom-style: solid;
+  border-bottom: 5px solid #545149;
 }
 
 button {
   color: #FFFFFF;
-  background-color: #335C67;
+  background-color: #4056A1;
 }
 
 .negative {
@@ -46,10 +50,10 @@ button {
 }
 
 /* desktop view */
-@media only screen and (min-width: 768px) {
-  .container {
-    margin: 200px 50px 50px;
-
+@media only screen and (min-width: 1024px) {
+  main {
+    margin-top: 80px;
+    padding: 50px;
+    width: 66.6vw;
   }
-  
 }
