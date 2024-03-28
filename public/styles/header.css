@@ -1,7 +1,7 @@
-header {
+.profile {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 400px;
   margin-top: 120px;
@@ -21,10 +21,11 @@ div h2 span {
 }
 
 /* desktop view */
-@media only screen and (min-width: 768px) {
-  header {
-    margin: 225px 50px 50px;
-    flex-shrink: 2;
+@media only screen and (min-width: 1024px) {
+  .profile {
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 33.3vw;
   }
   
 }
