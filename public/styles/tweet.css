@@ -16,6 +16,7 @@ header.tweet {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   height: 115px;
   margin: 0;
 }
@@ -30,9 +31,7 @@ footer.tweet {
   justify-content: space-between;
   align-items: center;
   font-size: small;
-  border-top-width: 5px;
-  border-top-color: #545149;
-  border-top-style: solid;
+  border-top: 5px solid #545149;
   padding: 0 20px;
 }
 
@@ -51,8 +50,9 @@ img.avatar {
   height: 75px;
 }
 
-section.tweet-content {
+.tweet-content {
   padding: 0 20px;
+  overflow-wrap: break-word;
 }
 
 h4 {
@@ -65,12 +65,11 @@ h3 {
 }
 
 /* desktop view */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   body {
     display: flex;
     flex-direction: row;
   }
-
-    
+  
 }
 
