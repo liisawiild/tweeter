@@ -1,12 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function () {
   console.log("Doc is ready!");
 
-  $('#tweet-text').on('input', function() {
+  $('#tweet-text').on('input', function () {
     let inputChar = $(this).val().length;
     let remainingChar = 140 - inputChar
-    $('.counter').text(remainingChar);            //will replace inner text with text provided in func
+    $('.counter').text(remainingChar);
 
-    if (remainingChar <0) {
+    if (remainingChar < 0) {
       $('.counter').addClass('negative');
     } else {
       $('.counter').removeClass('negative');
