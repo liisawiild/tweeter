@@ -1,7 +1,5 @@
 article {
-  border-width: 5px;
-  border-color: #545149;
-  border-style: solid;
+  border: 5px solid #545149;
   margin: 50px 0;
   padding: 0 15px;
 }
@@ -12,7 +10,7 @@ article:hover {
 
 header.tweet {
   background-image: none;
-  background-color: inherit;
+  background-color: #FFFCEB;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +28,7 @@ footer.tweet {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: small;
+  font-size: 1rem;
   border-top: 5px solid #545149;
   padding: 0 20px;
 }
@@ -39,7 +37,7 @@ footer div i {
   display: flex;
   justify-content: space-around;
   margin: 0 5px;
-  color: #335C67;
+  color: #4056A1;
 }
 
 footer div i:hover {
@@ -60,7 +58,7 @@ h4 {
 }
 
 h3 {
-  font-weight: 400; 
+  font-weight: 400;
   margin-left: 10px;
 }
 
@@ -70,6 +68,4 @@ h3 {
     display: flex;
     flex-direction: row;
   }
-  
 }
-
