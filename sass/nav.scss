@@ -1,0 +1,40 @@
+@use 'partial' as *;
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $primary-font;
+  font-size: 2.5rem;
+  color: $primary-font-color;
+  height: 120px;
+  background-color: $secondary-color;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+  padding: 0 1.5em;
+}
+
+.nav-tweet-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $secondary-font;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav i {
+  color: $warning-color;
+}
+
+
+/* desktop view */
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: $primary-color;
+    background-image: none;
+  }
+
+}

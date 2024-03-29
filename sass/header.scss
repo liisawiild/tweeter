@@ -1,0 +1,33 @@
+@use 'partial' as *;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 120px;
+  width: 100%;
+  background-color: $secondary-color;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+}
+
+div h2 {
+  margin: 0;
+  color: $primary-font-color;
+}
+
+div h2 span {
+  font-weight: 300;
+  display: inline;
+}
+
+/* desktop view */
+@media only screen and (min-width: 1024px) {
+  .profile {
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 33.3vw;
+  }
+
+}

@@ -1,0 +1,74 @@
+@use 'partial' as *;
+
+article {
+  border: 5px solid $border-color;
+  margin: 50px 0;
+  padding: 0 15px;
+}
+
+article:hover {
+  box-shadow: 10px 5px 5px $shadow-color;
+}
+
+header.tweet {
+  background-image: none;
+  background-color: $primary-background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+  margin: 0;
+}
+
+header span {
+  display: flex;
+  align-items: center;
+}
+
+footer.tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-top: 5px solid $border-color;
+  padding: 0 20px;
+}
+
+footer div i {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5px;
+  color: $primary-color;
+}
+
+footer div i:hover {
+  color: $secondary-color;
+}
+
+img.avatar {
+  height: 75px;
+}
+
+.tweet-content {
+  padding: 0 20px;
+  overflow-wrap: break-word;
+}
+
+h4 {
+  color: $shadow-color;
+}
+
+h3 {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* desktop view */
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
