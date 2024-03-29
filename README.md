@@ -26,13 +26,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 ### SCREENSHOTS
-![Homepage of the SPA Tweeter App](images/homepage.png)
-![Toggled the tweet container into view](images/new-tweet.png)
+![Homepage of the SPA Tweeter App](public/images/homepage.png)
+![Toggled the tweet container into view](public/images/new-tweet.png)
 ![Close up of the new-tweet container which includes a character counter](images/counter.png)
-![Homepage of the SPA Tweeter App](images/narrow-window.png)
-![Homepage of the SPA Tweeter App](images/narrow-window-new-tweet.png)
+![Homepage of the SPA Tweeter App](public/images/narrow-window.png)
+![Homepage of the SPA Tweeter App](public/images/narrow-window-new-tweet.png)
 #### Error Messages
-![Homepage of the SPA Tweeter App](images/too-long-err.png)
-![Homepage of the SPA Tweeter App](images/empty-tweet-err.png)
+![Homepage of the SPA Tweeter App](public/images/too-long-err.png)
+![Homepage of the SPA Tweeter App](public/images/empty-tweet-err.png)
 
 
